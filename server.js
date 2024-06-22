@@ -17,7 +17,7 @@ app.use(
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use("/api", require("./routes/authRoutes"));
-app.get('/',(req,res) => res.send('Hello Server'))
+app.get("/", (req, res) => res.send("Hello Server"));
 //mongoose.connect(process.env.MONGODB_URAL).then(() => {
 // console.log("Data base connection ");
 //});
